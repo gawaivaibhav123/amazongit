@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2" parallel="tests">
+		 <test name="ChromeBrowser">
+	  <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="test1.Testng12">
+      <methods>
+		 <include name="ToVerifyTheTaskButton"/>
+		 <include name="ToVerifyTheReportButton"/>
+	  </methods>
+      </class>
+    </classes>
+</test>
+		<test name="FirefoxBrowser">
+   <parameter name="browserName" value="Firefox"/>
+    <classes>
+      <class name="test1.Testng12">
+      <methods>
+		 <include name="ToVerifyTheTaskButton"/>	
+	  </methods>
+      </class>
+    </classes> 
+ 
+
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
